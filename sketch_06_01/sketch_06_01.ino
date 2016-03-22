@@ -1,6 +1,6 @@
 //sketch 6-01
 
-int outPin = 4;
+const int outPin = 3;
 
 void setup()
 {

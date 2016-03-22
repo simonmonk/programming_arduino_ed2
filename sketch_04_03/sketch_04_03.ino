@@ -1,6 +1,6 @@
 // sketch 04-03
-int ledPin = 13;
-int delayPeriod = 250;
+const int ledPin = 13;
+const int delayPeriod = 250;
 
 void setup()
 {

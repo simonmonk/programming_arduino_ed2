@@ -2,7 +2,7 @@
 
 #include <LiquidCrystal.h>
 
-// lcd(RS, E, D4, D5, D6, D7)
+//            lcd(RS E  D4 D5 D6 D7)
 LiquidCrystal lcd(8, 9, 4, 5, 6, 7);
 int numRows = 2;
 int numCols = 16;

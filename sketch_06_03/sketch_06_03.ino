@@ -1,11 +1,10 @@
 //sketch 06-03
 
-int inputPin = 5;
+const int inputPin = 5;
 
 void setup()
 {
-  pinMode(inputPin, INPUT);
-  digitalWrite(inputPin, HIGH);
+  pinMode(inputPin, INPUT_PULLUP);
   Serial.begin(9600);
 }
 

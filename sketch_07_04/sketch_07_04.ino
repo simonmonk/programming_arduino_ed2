@@ -1,14 +1,13 @@
 //sketch 07-04
 
-int interruptPin = 2;
-int ledPin = 13;
+const int interruptPin = 2;
+const int ledPin = 13;
 int period = 500;
 
 void setup()
 {
   pinMode(ledPin, OUTPUT);
-  pinMode(interruptPin, INPUT);
-  digitalWrite(interruptPin, HIGH); // pullup
+  pinMode(interruptPin, INPUT_PULLUP);
   attachInterrupt(0, goFast, FALLING);
 }
 

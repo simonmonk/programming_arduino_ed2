@@ -1,6 +1,6 @@
 //sketch 06-02
 
-int inputPin = 5;
+const int inputPin = 5;
 
 void setup()
 {

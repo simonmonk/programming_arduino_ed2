@@ -1,6 +1,7 @@
 // sketch 5-05
-int ledPin = 13;
-int dotDelay = 200;
+
+const int ledPin = 13;
+const int dotDelay = 200;
 
 char* letters[] = {
   ".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..",    // A-I

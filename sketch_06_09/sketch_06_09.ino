@@ -1,6 +1,6 @@
 //sketch 06-08
 
-int analogPin = 0;
+const int analogPin = 0;
 
 void setup()
 {

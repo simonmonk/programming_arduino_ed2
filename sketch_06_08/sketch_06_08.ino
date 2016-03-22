@@ -1,6 +1,6 @@
 //sketch 06-08
 
-int outputPin = 3;
+const int outputPin = 3;
 
 void setup()
 {
@@ -13,8 +13,8 @@ void loop()
 {
   if (Serial.available() > 0)
   {
-    char ch = Serial.read();
-    int volts = (ch - '0') * 51;
-    analogWrite(outputPin, volts);
+    float volts = Serial.parseFloat();
+    int pwmValue = volts * 255.0 / 5.0;
+    analogWrite(outputPin, pwmValue);
   }
 }

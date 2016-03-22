@@ -1,11 +1,12 @@
-// sketch 10-02 Web Controlled Arduino
+// sketch 10-02 Internet Pins
 
 #include <SPI.h>
 #include <Ethernet.h>
 
 // MAC address just has to be unique. This should work
 byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
-
+// The IP address will be dependent on your local network:
+byte ip[] = { 192, 168, 1, 30 };
 EthernetServer server(80);
 
 int numPins = 5;
@@ -20,10 +21,8 @@ void setup()
      pinMode(pins[i], OUTPUT);
   }
   Serial.begin(9600);
-  Ethernet.begin(mac);
+  Ethernet.begin(mac, ip);
   server.begin();
-  Serial.print("Server started on: ");
-  Serial.println(Ethernet.localIP());
 }
 
 void loop()

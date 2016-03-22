@@ -1,18 +1,18 @@
-//sketch 06-08
+// sketch 08-04
 
-#include <EEPROM.h>
+#include <avr/eeprom.h>
 
-void setup()
+void setup() 
 {
-  float tempFloat = 20.75;
-  byte tempByte = (int)(tempFloat * 4);
-  EEPROM.write(0, tempByte);
-  
-  byte tempByte2 = EEPROM.read(0);
-  float temp2 = (float)(tempByte2) / 4;
   Serial.begin(9600);
-  Serial.println("\n\n\n");
-  Serial.println(temp2);
+  float f1 = 1.23;
+  eeprom_write_block(&f1, 0, 4);
+  float f2 = 0;
+  eeprom_read_block(&f2, 0, 4);
+  Serial.println(f2);
 }
 
-void loop(){}
+void loop() 
+{
+}
+

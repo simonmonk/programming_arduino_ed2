@@ -1,13 +1,12 @@
 //sketch 06-04
 
-int inputPin = 5;
-int ledPin = 13;
+const int inputPin = 5;
+const int ledPin = 13;
 
 void setup()
 {
   pinMode(ledPin, OUTPUT);
-  pinMode(inputPin, INPUT);
-  digitalWrite(inputPin, HIGH);
+  pinMode(inputPin, INPUT_PULLUP);
 }
 
 void loop()
