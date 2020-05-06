@@ -1,4 +1,4 @@
-//sketch 06-08
+//sketch 06-09
 
 const int analogPin = 0;
 
