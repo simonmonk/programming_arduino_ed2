@@ -1,15 +1,11 @@
 // sketch 5-04
 char message[] = "Hello";
 
-void setup()
-{
+void setup() {
   Serial.begin(9600);
 }
 
-void loop()
-{
+void loop() {
   Serial.println(message);
   delay(1000);
 }
-
-

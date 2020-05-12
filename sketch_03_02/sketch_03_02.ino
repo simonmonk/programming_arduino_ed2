@@ -2,16 +2,13 @@
 int ledPin = 13;
 int delayPeriod = 500;
 
-void setup()
-{
+void setup() {
   pinMode(ledPin, OUTPUT);
 }
 
-void loop()
-{
+void loop() {
  digitalWrite(ledPin, HIGH);
  delay(delayPeriod);
  digitalWrite(ledPin, LOW);
  delay(delayPeriod);
 }
-
