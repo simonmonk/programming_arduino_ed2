@@ -5,13 +5,11 @@ const int samplePeriod = 10;
 
 long lastSampleTime = 0;
 
-void setup()
-{
+void setup() {
   Serial.begin(9600);
 }
 
-void loop()
-{
+void loop() {
   long now = millis();
   if (now > lastSampleTime + samplePeriod) {
     lastSampleTime = now;

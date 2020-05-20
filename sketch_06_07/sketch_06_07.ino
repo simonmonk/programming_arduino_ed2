@@ -8,8 +8,7 @@ const int ledPin = 13;
 int ledValue = LOW;
 Bounce bouncer = Bounce(); 
 
-void setup() 
-{
+void setup() {
   pinMode(inputPin, INPUT_PULLUP);
   pinMode(ledPin, OUTPUT);
   bouncer.attach(inputPin);
@@ -24,4 +23,3 @@ void loop()
    digitalWrite(ledPin, ledValue);
   }
 }
-

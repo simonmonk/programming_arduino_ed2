@@ -2,13 +2,11 @@
 
 const int analogPin = 0;
 
-void setup()
-{
+void setup() {
   Serial.begin(9600);
 }
 
-void loop()
-{
+void loop() {
   int reading = analogRead(analogPin);
   float voltage = reading / 204.6;
   Serial.print("Reading=");

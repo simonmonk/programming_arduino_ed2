@@ -2,14 +2,12 @@
 
 const int inputPin = 5;
 
-void setup()
-{
+void setup() {
   pinMode(inputPin, INPUT);
   Serial.begin(9600);
 }
 
-void loop()
-{
+void loop() {
   int reading = digitalRead(inputPin);
   Serial.println(reading);
   delay(1000);
